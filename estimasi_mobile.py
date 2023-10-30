@@ -10,8 +10,8 @@ clock_speed = st.number_input('Input clock_speed')
 mobile_wt = st.number_input('Input mobile_wt')
 ram = st.number_input('Input ram')
 int_memory = st.number_input('Input int_memory')
-dual_sim = st.number_input('Input dual_sim')
-touch_screen = st.number_input('Input touch_screen')
+dual_sim = st.selectbox('Input Dual SIM',(0, 1))
+touch_screen = st.selectbox('Input Touchscreen',(0, 1))
 n_cores = st.number_input('Input n_cores')
 
 if st.button('Mobile Price'):
