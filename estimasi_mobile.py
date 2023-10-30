@@ -18,18 +18,21 @@ if st.button('Mobile Price'):
     input_data = [[battery_power, clock_speed, mobile_wt, ram, int_memory, dual_sim, touch_screen, n_cores]]
     predicted_price_range = model.predict(input_data)[0]  
 
-   
+    predict_result = int(predicted_price_range)
     price_category = ''
-    if predicted_price_range == 0:
+
+    if predict_result == 0:
         price_category = "Murah"
-    elif predicted_price_range == 1:
+    elif predict_result == 1:
         price_category = "Menengah Bawah"
-    elif predicted_price_range == 2:
+    elif predict_result == 2:
         price_category = "Menengah"
-    elif predicted_price_range == 3:
+    elif predict_result == 3:
         price_category = "Mahal"
     
-    st.write(f'Price Range: {int(predicted_price_range)}')
+    print(type(predicted_price_range))
+    print(predicted_price_range)
+    st.write(f'Price Range: {price_category} dengan nilai {predict_result}')
     #Price range di angka 0 mengkategorikan harga Hp tersebut "Murah"
     #Price range di angka 1 mengkatagorikan harga Hp tersebut "Menengah bawah/lumayan murah"
     #Price range di angka 2 mengkatagorikan harga Hp tersebut "Menengah/sedang"
