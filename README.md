@@ -50,6 +50,10 @@ Dataset: [mobile-price-classification](https://www.kaggle.com/datasets/iabhishek
 - dual_sim: Mendukung dua kartu SIM (Ya/Tidak) atau (1/0) = Dtype (int64)
 - touch_screen: Memiliki layar sentuh (Ya/Tidak) atau (1/0) = Dtype (int64)
 - n_cores: Jumlah inti prosesor = Dtype (int64)
+![App Screenshot](gambar4.png)
+gambar (figure) dengan ukuran tertentu dan menampilkan boxplot untuk data 'price_range' dalam DataFrame 'df' menggunakan Seaborn (sns). Boxplot digunakan untuk melihat distribusi data harga.
+![App Screenshot](gambar3.png)
+membuat gambar dengan ukuran tertentu dan menampilkan heatmap korelasi antar variabel dalam DataFrame 'df' dengan penanda (annot) dan skema warna "Blues"
 
 ## Data Preparation
 
